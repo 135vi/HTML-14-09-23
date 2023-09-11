@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .flex-container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        row-gap: 10px;
+        column-gap: 10px;
+
+    }
+
+    .row-wrap{
+        flex-flow: row wrap;
+    }
+    .row-reverse {
+        flex-flow: row-reverse wrap;
+    }
+    
+    .feature-box {
+        padding: 10px;       
+        min-height: 150px;
+        border-radius: 20px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+       
+    }
+
+    .order-1 {
+        order: -1;
+    }
+    .order-5 {
+        order: 5;
+    }
+    .grow-1{
+        flex-grow: 1;
+    }
+    .grow-5 {
+        flex-grow: 5;
+    }
+    .grow-2{
+        flex-grow: 2;
+    }
+    .description p {
+        margin: 0;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+</style>
+<body><main class="flex-container row-wrap">
+    <div class="feature-box  grow-1">
+        <div class="description ">
+            <h3>order 5</h3>
+            <p>Sample text. Click to select the Text Element.</p>
+        </div>
+    </div>
+    <div class="feature-box grow-5">
+        <div>icon</div>
+        <div class="description">
+            <h3>bloc3</h3>
+            <p>Sample text. Click to select the Text Element.</p>
+        </div>
+    </div>
+    <div class="feature-box grow-5">
+        <div>icon</div>
+        <div class="description">
+            <h3>Инвестиции</h3>
+            <p>Sample text. Click to select the Text Element.</p>
+        </div>
+    </div>
+    <div class="feature-box grow-1">
+        <div>icon</div>
+        <div class="description">
+            <h3>Инвестиции</h3>
+            <p>Sample text. Click to select the Text Element.</p>
+        </div>
+    </div>
+    <div class="feature-box grow-2">
+        <div>icon</div>
+        <div class="description">
+            <h3>Инвестиции</h3>
+            <p>Sample text. Click to select the Text Element.</p>
+        </div>
+    </div>
+    <div class="feature-box grow-1 ">
+        <div>icon</div>
+        <div class="description ">
+            <h3>Последний блок</h3>
+            <p>Sample text. Click to select the Text Element.</p>
+        </div>
+    </div>
+</main>
