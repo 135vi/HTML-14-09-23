@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Number №2</title>
 </head>
 <style>
     .flex-container {
         display: flex;
         margin: 0 auto;
         flex-flow: column;
+        flex-wrap: wrap;
+        width: 1000px;
+        margin: 0 auto;
         justify-content: center;
-        align-items: left;
+        align-items: center;
+        gap: 15px 15px;
+        padding: 15px 15px;
+        background: rgb(177, 177, 177);
     }
     .feature-box {
-        padding: 0px;
-        min-height: 50px;
-        max-width: 200px;
+        height: 25px;
+        width: 300px;
         border-radius: 10px;
-        border: 1px solid black;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 15px 15px;
+        padding: 15px 15px;
+        align-items: flex-start
+    }
+    .first {
+        background: pink;
+    }
+    .second {
+        background: rgb(83, 83, 255);
     }
     
 </style>
 <body>
     <main class="flex-container">
-        <div class="feature-box">1</div>
-        <div class="feature-box">2</div>
-        <div class="feature-box">1</div>
-        <div class="feature-box">2</div>
-        <div class="feature-box">1</div>
-        <div class="feature-box">2</div>
+        <div class="feature-box first">Ania Smith</div>
+        <div class="feature-box second">2</div>
+        <div class="feature-box first">1</div>
+        <div class="feature-box second">2</div>
+        <div class="feature-box first">1</div>
+        <div class="feature-box second">2</div>
     </main>
 </body>
 </html>

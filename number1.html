@@ -2,106 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Number №1</title>
 </head>
 <style>
-
-    .flex-container {
-        max-width: 900px;
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: rgb(96, 139, 96);
+        width: 1200px;
         margin: 0 auto;
-        display: flex;
-        /* justify-content: space-between; */
+        justify-content: center;
         align-items: center;
-        row-gap: 10px;
-        column-gap: 10px;
-
+        gap: 15px 15px;
+        padding: 15px 15px;
     }
-
-    .row-wrap{
-        flex-flow: row space 3px;
-    }
-    .row-reverse {
-        flex-flow: row-reverse wrap;
-    }
-    
-    .feature-box {
-        padding: 10px;       
-        min-height: 150px;
-        border-radius: 20px;
-        border: 1px solid black;
+    .item {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-       
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        color: rgb(14, 49, 14);
+        background: white;
+        padding: 15px 15px;
+        gap: 15px 15px;
     }
-
-    .order-1 {
-        order: -1;
+    .item-1 {
+        height: 150px;
     }
-    .order-5 {
-        order: 5;
+    .item-2 {
+        height: 100px;
     }
-    .grow-1{
-        flex-grow: 1;
+    .item-3 {
+        height: 100px;
     }
-    .grow-5 {
-        flex-grow: 5;
+    .item-4 {
+        height: 220px;
     }
-    .grow-2{
-        flex-grow: 2;
+    .item-5 {
+        height: 230px;
     }
-    .description p {
-        margin: 0;
+    .item-6 {
+        height: 350px;
     }
-    .icon {
-        width: 30px;
-        height: 30px;
+    .item-7 {
+        height: 100px;
+    }
+    .item-8 {
+        height: 150px;
+    }
+    .item-9 {
+        height: 150px;
     }
 </style>
 <body>
-  <main class="flex-container row-wrap">
-    <div class="feature-box  grow-1">
-        <div class="description ">
-            <h3>order 5</h3>
-            <p>Sample text. Click to select the Text Element.</p>
-        </div>
-    </div>
-    <div class="feature-box grow-5">
-        <div>icon</div>
-        <div class="description">
-            <h3>bloc3</h3>
-            <p>Sample text. Click to select the Text Element.</p>
-        </div>
-    </div>
-    <div class="feature-box grow-5">
-        <div>icon</div>
-        <div class="description">
-            <h3>Инвестиции</h3>
-            <p>Sample text. Click to select the Text Element.</p>
-        </div>
-    </div>
-    <div class="feature-box grow-1">
-        <div>icon</div>
-        <div class="description">
-            <h3>Инвестиции</h3>
-            <p>Sample text. Click to select the Text Element.</p>
-        </div>
-    </div>
-    <div class="feature-box grow-2">
-        <div>icon</div>
-        <div class="description">
-            <h3>Инвестиции</h3>
-            <p>Sample text. Click to select the Text Element.</p>
-        </div>
-    </div>
-    <div class="feature-box grow-1 ">
-        <div>icon</div>
-        <div class="description ">
-            <h3>Последний блок</h3>
-            <p>Sample text. Click to select the Text Element.</p>
-        </div>
-    </div>
-  </main>
+    <main class="container">
+        <div class="item item-1"><b>What is Lorem Ipsum?</b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+        <div class="item item-2"><b>Why do we use it?</b>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.</div>
+        <div class="item item-3"><b>Where does it come from?</b>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+        <div class="item item-4"><b>Where can I get some?</b> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</div>
+        <div class="item item-5"><b>The standard Lorem Ipsum passage, used since the 1500s</b> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</div>
+        <div class="item item-6"><b>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</b> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
+        <div class="item item-7"><b>914 translation by H. Rackham</b> "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</div>
+        <div class="item item-8"><b>Section of "de Finibus Bonorum et Malorum", written by Cicero</b> "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</div>
+        <div class="item item-9"><b>1914 translation by H. Rackham</b> "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue."</div>
+    </main>
 </body>
+</html>
