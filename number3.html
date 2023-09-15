@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number №3</title>
+</head>
+<style>
+    header {
+        display: flex;
+        width: 1000px;
+        height: 65px;
+        margin: 0 auto;
+        background: rgb(58, 58, 131);
+        align-items: center;
+        text-align: left;
+        padding: 15px;
+    }
+    .grid-container {
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+        gap: 15px;
+        padding: 15px;
+        background: rgb(66, 66, 155);
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 300px;
+        height: 300px;
+        padding: 15px;
+        background: rgb(182, 182, 182);
+        padding: 10px;
+        gap: 10px;
+        flex: 0 0 auto;
+    }
+    .item-2 {
+        display: flex;
+        border-radius: 5px;
+        text-align: center;
+        background: white;
+        padding: 10px;
+    }
+    .layer-y {
+        overflow-y: scroll;
+    }
+</style>
+<body>
+    <header>
+        <h1>MY BOARDS</h1>
+    </header>
+    <main class="grid-container layer-x">
+        <div class="item">
+            <h4>To do</h4>
+            <div class="item-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <div class="item-2">It has survived not only five centuries, but also the leap into electronic typesetting.</div>
+        </div>
+        <div class="item layer-y">
+            <h4>In progress</h4>
+            <div class="item-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+            <div class="item-2">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</div>
+            <div class="item-2">a search for 'lorem ipsum' will uncover many web sites still in their infancy.</div>
+            <div class="item-2">Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div>
+        </div>
+        <div class="item">
+            <h4>Test</h4>
+            <div class="item-2">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</div>
+            <div class="item-2">Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero.</div>
+        </div>
+        <div class="item layer-y">
+            <h4>Fix</h4>
+            <div class="item-2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</div>
+            <div class="item-2">randomised words which don't look even slightly believable.</div>
+            <div class="item-2">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</div>
+        </div>
+        <div class="item">
+            <h4>Done</h4>
+            <div class="item-2">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero.</div>
+        </div>
+    </main>
+</body>
+</html>

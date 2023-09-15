@@ -6,46 +6,92 @@
     <title>Number №2</title>
 </head>
 <style>
-    .flex-container {
+    img {
+        width: 50px;
+    }
+    .grid-container {
+        display: grid;
+        margin: 0 auto;
+        gap: 15px;
+        padding: 15px;
+        background: silver;
+    }
+    .item-user {
         display: flex;
-        margin: 0 auto;
-        flex-flow: column;
-        flex-wrap: wrap;
-        width: 1000px;
-        margin: 0 auto;
         justify-content: center;
         align-items: center;
-        gap: 15px 15px;
-        padding: 15px 15px;
-        background: rgb(177, 177, 177);
+        text-align: center;
+        gap: 15px;
     }
-    .feature-box {
-        height: 25px;
-        width: 300px;
-        border-radius: 10px;
+    p {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 15px 15px;
-        padding: 15px 15px;
-        align-items: flex-start
+        border-radius: 10px;
+        align-items: center;
+        text-align: left;
+        width: 300px;
+        height: 50px;
+        padding: 15px;
     }
-    .first {
-        background: pink;
+    time {
+        color: gray;
     }
-    .second {
-        background: rgb(83, 83, 255);
+    .pink {
+        background: rgb(255, 189, 200);
     }
-    
+    .blue {
+        background: rgb(135, 135, 255);
+    }
 </style>
 <body>
-    <main class="flex-container">
-        <div class="feature-box first">Ania Smith</div>
-        <div class="feature-box second">2</div>
-        <div class="feature-box first">1</div>
-        <div class="feature-box second">2</div>
-        <div class="feature-box first">1</div>
-        <div class="feature-box second">2</div>
+    <main class="grid-container">
+        <div class="item-user">
+            <div>
+                <h3>Ania Smith</h3>
+                <time>4 hours ago</time>
+            </div>
+            <img src="circle-user-solid.svg" alt="user1">
+            <p class="pink">Ut in enim scelerisque, pharetra velit id, maxiwus nuns</p>
+        </div>
+        <div class="item-user">
+            <p class="blue">Fusce auctor nibh at consequat efficitur</p>
+            <img src="circle-user-regular.svg" alt="user1">
+            <div>
+                <h3>Jack Silverston</h3>
+                <time>4 hours ago</time>
+            </div>
+        </div>
+        <div class="item-user">
+            <div>
+                <h3>Ania Smith</h3>
+                <time>4 hours ago</time>
+            </div>
+            <img src="circle-user-solid.svg" alt="user1">
+            <p class="pink">Etiam lacinia velit id venenatis sodales</p>
+        </div>
+        <div class="item-user">
+            <p class="blue">Mauris ac quis ante dignissim tempus in non nulla</p>
+            <img src="circle-user-regular.svg" alt="user1">
+            <div>
+                <h3>Jack Silverston</h3>
+                <time>3 hours ago</time>
+            </div>
+        </div>
+        <div class="item-user">
+            <div>
+                <h3>Ania Smith</h3>
+                <time>3 hours ago</time>
+            </div>
+            <img src="circle-user-solid.svg" alt="user1">
+            <p class="pink">Fusce quis ex fringilla, congue diam vel, sodales tortor</p>
+        </div>
+        <div class="item-user">
+            <p class="blue">Curabitur quis dolor eget elit pulvinar sollicitudin</p>
+            <img src="circle-user-regular.svg" alt="user1">
+            <div>
+                <h3>Jack Silverston</h3>
+                <time>2 hours ago</time>
+            </div>
+        </div>
     </main>
 </body>
 </html>
